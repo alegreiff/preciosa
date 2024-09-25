@@ -12,6 +12,8 @@ export default {
 			fontFamily: {
         jakarta: ['Plus Jakarta Sans Variable', 'sans-serif'],
 				outfit: ['Outfit Variable', 'sans-serif'],
+				mona: ['Mona Sans Thin'],
+				monita: ['Mona Sans'],
       },
 
 		},

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Mona Sans Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mona Sans Thin'), url('/fuentes/Mona-Sans.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'Mona Sans';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Mona Sans'), url('/fuentes/Mona-Sans-BoldWide.woff') format('woff');
+      }
+}
