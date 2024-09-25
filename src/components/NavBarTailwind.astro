@@ -2,13 +2,9 @@
 const {pathname} = Astro.url
 
 const enlaces = [
-  {nombre: 'Inicio', url: '/', active: true },
-  {nombre: 'PM', url: '/preciosa', active: true },
-  {nombre: 'Fuentes', url: '/fuentes', active: true },
-  {nombre: 'Taller', url: '/parte1', active: true },
-  {nombre: 'Flex', url: '/flex', active: true },
-  {nombre: 'Landing', url: '/landing', active: false },
-  {nombre: 'Tailwind', url: '/tailwind', active: true },
+  {nombre: 'Inicio', url: '/tailwind', active: true },
+  {nombre: 'About', url: '/tailwind/about', active: true },
+  
   
 ]
 ---
@@ -28,13 +24,7 @@ const enlaces = [
 <nav class="bg-white shadow-lg mb-2 pb-4">
   <div class="px-4 container mx-auto">
     <div class="flex justify-between">
-      <div class="flex space-x-7">
-        
-        <a href="/" class="flex item-center py-4 px-2" >
-          <svg class="w-8 h-8 mr-2" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/><path d="M10 12h4v4h-4z"/></g></svg>
-          <span class="font-semibold text-gray-500 text-lg">Astro - Preciosa Media</span>
-        </a>
-      </div>
+      
       <div class="flexspace-x-1 hidden md:flex">
         {
           enlaces.map(({url, nombre, active}) => (
