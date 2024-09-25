@@ -1,0 +1,25 @@
+---
+import { FuenteSize } from "@/components/FuenteSize";
+import MainContainer from "@/layouts/MainContainer.astro";
+const texto ="Preciosa Media COLOMBIA Murciélago y ñandú"
+---
+
+<MainContainer>
+  <p class="bg-amber-200 h-auto p-2 fluid-text-xl text-slate-700 mb-4">
+    Para ver los tamaños, cambie el tamaño de su navegador. Utilizaremos texto fluido para ajustar de manera automática los tamaños.
+  </p>
+  <div class="flex gap-8 mb-8">
+    <div class="w-full border fluid-text-2xl font-semibold p-1 text-slate-500 font-jakarta">JAKARTA: Nuestro catálogo: PRECIOSA MEDIA. Contenidos. Canales interesados. SEO. PM. Preciosa Media.</div>
+    <div class="w-full border fluid-text-2xl font-semibold p-1 text-slate-500 font-outfit">OUTFIT: Nuestro catálogo: PRECIOSA MEDIA. Contenidos. Canales interesados. SEO. PM. Preciosa Media.</div>
+  </div>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-7xl font-jakarta"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-6xl font-outfit"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-5xl font-bold"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-4xl"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-3xl"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-2xl"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-xl"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-lg"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-base"/>
+  <FuenteSize client:idle texto={texto} clase="fluid-text-sm"/>
+</MainContainer>

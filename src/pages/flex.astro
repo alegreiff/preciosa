@@ -1,0 +1,25 @@
+---
+import MainContainer from "@/layouts/MainContainer.astro";
+---
+
+<MainContainer>
+  <div class="flex border-2 border-blue-200  h-[600px] place-content-between">
+    <div class="card">1</div>
+    <div class="card self-center">2</div>
+    <div class="card self-end">3</div>
+  </div>
+  <div class="flex mt-20 flex-wrap bg-teal-300 gap-4 ">
+    <div class="card grow shrink-0">1</div>
+    <div class="card grow shrink-0 ">2</div>
+    <div class="card grow shrink-0 ">3</div>
+    <div class="card grow shrink-0 ">4</div>
+    <div class="card grow-0 shrink-0 ">5</div>
+    <div class="card grow shrink-0 ">6</div>
+  </div>
+
+</MainContainer>
+<style>
+  .card {
+   @apply bg-red-500 w-40 h-40 grid place-content-center rounded-lg text-white  font-bold border-2 border-red-600 text-4xl; 
+  }
+</style>
