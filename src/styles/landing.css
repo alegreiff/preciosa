@@ -1,0 +1,24 @@
+@import url(https://fonts.bunny.net/css?family=epilogue:500,700);
+:root {
+--Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+--pollo: red
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  @apply bg-[var(--Almost-White)] text-[var(--Almost-Black)];
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+   
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+header {
+  border: 1px lime solid;
+}

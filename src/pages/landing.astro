@@ -1,28 +1,75 @@
 ---
 import MainContainer from "@/layouts/MainContainer.astro";
+import "../styles/landing.css";
 ---
 
 <MainContainer hasNav={false}>
+<header class="flex justify-between align-middle">
+  <img src="/reto/logo.svg" alt="Logo">
+  <img src="/reto/icon-menu.svg" alt="Menú">
+  <nav class="hidden">
+    <ul>
+      <li><button>Features</button>
+        <img src="/reto/icon-arrow-down.svg" alt="Flecha abajo">
+        <ul>
+          <li>
+            <img src="/reto/icon-todo.svg" alt="To do ">
+            <span>To do list</span></li>
+          <li>
+            <img src="/reto/icon-calendar.svg" alt="Calendar">
+            <span>Calendar</span></li>
+          <li>
+            <img src="/reto/icon-reminders.svg" alt="Reminders">
+            <span>Reminders</span></li>
+          <li>
+            <img src="/reto/icon-planning.svg" alt="Planning">
+            <span>Planning</span></li>
+        </ul>
+      </li>
+      <li><button>Company</button> <img src="/reto/icon-arrow-down.svg" alt="Flecha abajo">
+        <ul>
+          <li>
+            Our History</li>
+          <li>
+            Our Our Team</li>
+          <li>
+            Our Blog</li>
+        </ul>
+      </li>
+      <li><span>Careers</span></li>
+      <li><span>About</span></li> 
+    </ul>
+    <button>Login</button>
+    <button>Register</button>
+  </nav>
+</header>
+<main>
+<section>
+  <h2>Make remote work</h2>
+  <p>Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</p>
+    <button>Learn More</button>
+    <div>
+      <img src="/reto/client-databiz.svg" alt="DataViz">
+      <img src="/reto/client-audiophile.svg" alt="Audiophile">
+      <img src="/reto/client-meet.svg" alt="Meet">
+      <img src="/reto/client-maker.svg" alt="Maker">
+    </div>
+</section>
+<picture>
+  <source srcset="/reto/image-hero-mobile.png" media="(max-width:639px)">
+  <source srcset="/reto/image-hero-desktop.png" media="(min-width:640px)">
+  <img src="/reto/image-hero-mobile.png" alt="Hero Image">
+</picture>
+</main>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Jaime</a>.
+</div>
 
 
-  Features
-  Company
-  Careers
-  About
+  
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  
 </MainContainer>
-<style>
-  body{
-    @apply bg-slate-100 text-slate-900;
-    
-  }
-</style>
